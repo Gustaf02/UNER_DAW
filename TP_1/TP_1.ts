@@ -37,3 +37,12 @@ class Vaca implements Animal {
     }
 }
 
+// 3. Función describirAnimal
+function describirAnimal(animal: Animal): void {
+    console.log(`El animal ${animal.nombre} hace ${animal.gritar()}`);
+}
+
+// 4. Instancias de las clases con sus tipos correspondientes
+const perro: Perro = new Perro("Rodolfo");
+const vaca: Vaca = new Vaca("Lucinda");
+const gato: Gato = new Gato("Gatico");

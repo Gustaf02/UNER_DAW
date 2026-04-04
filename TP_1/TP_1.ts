@@ -46,3 +46,21 @@ function describirAnimal(animal: Animal): void {
 const perro: Perro = new Perro("Rodolfo");
 const vaca: Vaca = new Vaca("Lucinda");
 const gato: Gato = new Gato("Gatico");
+
+// 5.  Ejecutar  el  método  “describirAnimal”  para  cada  una  de  las  constantes  creadas  (3 
+// veces en total). 
+describirAnimal(perro);
+describirAnimal(vaca);
+describirAnimal(gato);
+
+
+// 6.  Crear un Enum “DiasSemana” que tenga como valores los días de la semana. 
+enum DiasSemana {
+    Lunes,
+    Martes,
+    Miércoles,
+    Jueves,
+    Viernes,
+    Sábado,
+    Domingo
+};

@@ -58,9 +58,9 @@ describirAnimal(gato);
 enum DiasSemana {
     Lunes,
     Martes,
-    Miércoles,
+    Miercoles,
     Jueves,
     Viernes,
-    Sábado,
+    Sabado,
     Domingo
 };

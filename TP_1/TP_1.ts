@@ -64,3 +64,33 @@ enum DiasSemana {
     Sabado,
     Domingo
 };
+
+// 7. Crear una variable que pueda contener valorrs tipo string o numero
+
+let variable: number | string;
+// asignar el string "Messi"
+variable= "Messi";
+console.log(variable);
+
+// reemplazar con el numero 10
+variable= 10;
+console.log(variable);
+
+// 8. Clase genérica que implementa la interfaz Fila<T>
+interface Fila<T> {
+    agregar(elemento: T): void;
+    remover(): T | undefined;
+}
+
+class FilaGenerica<T> implements Fila<T> {
+    private elementos: T[] = [];
+
+    agregar(elemento: T): void {
+        this.elementos.push(elemento);
+    }
+
+    remover(): T | undefined {
+        return this.elementos.shift();
+    }
+}
+

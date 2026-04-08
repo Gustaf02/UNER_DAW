@@ -49,6 +49,8 @@ const gato: Gato = new Gato("Gatico");
 
 // 5.  Ejecutar  el  método  “describirAnimal”  para  cada  una  de  las  constantes  creadas  (3 
 // veces en total). 
+
+console.log("--- Descripción de Animales ---");
 describirAnimal(perro);
 describirAnimal(vaca);
 describirAnimal(gato);
@@ -67,6 +69,7 @@ enum DiasSemana {
 
 // 7. Crear una variable que pueda contener valores tipo string o numero
 
+console.log("--- Variable que contiene valores tipo string o número--");
 let variable: number | string;
 // asignar el string "Messi"
 variable= "Messi";

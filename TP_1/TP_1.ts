@@ -50,7 +50,9 @@ const gato: Gato = new Gato("Gatico");
 // 5.  Ejecutar  el  método  “describirAnimal”  para  cada  una  de  las  constantes  creadas  (3 
 // veces en total). 
 
-console.log("--- Descripción de Animales ---");
+console.log("\n========================================");
+console.log("Descripción de Animales");
+console.log("========================================\n");
 describirAnimal(perro);
 describirAnimal(vaca);
 describirAnimal(gato);
@@ -69,7 +71,9 @@ enum DiasSemana {
 
 // 7. Crear una variable que pueda contener valores tipo string o numero
 
-console.log("--- Variable que contiene valores tipo string o número--");
+console.log("\n========================================");
+console.log("Variable que contiene valores tipo string o número");
+console.log("========================================\n");
 let variable: number | string;
 // asignar el string "Messi"
 variable= "Messi";
@@ -80,6 +84,7 @@ variable= 10;
 console.log("Ahora la variable es tipo número y es:", variable);
 
 // 8. Clase genérica que implementa la interfaz Fila<T>
+
 interface Fila<T> {
     agregar(elemento: T): void;
     remover(): T | undefined;
@@ -99,17 +104,20 @@ class FilaGenerica<T> implements Fila<T> {
 
 // 9. Crear una fila para números, una fila para strings, y una fila para animales 
 // (declarando los tipos correspondientes en cada variable).
+
 const filaNumeros = new FilaGenerica<number>(); 
 const filaStrings = new FilaGenerica<string>(); 
 const filaAnimales = new FilaGenerica<Animal>(); 
 
 // 10. Operaciones en las filas
 // En la fila para animales, agregar las 3 instancias creadas previamente.
+
 filaAnimales.agregar(perro); 
 filaAnimales.agregar(gato); 
 filaAnimales.agregar(vaca); 
 
 // En las otras 2 filas, agregar 3 elementos a elección en cada una.
+
 filaNumeros.agregar(7); 
 filaNumeros.agregar(3); 
 filaNumeros.agregar(29);
@@ -119,12 +127,16 @@ filaStrings.agregar("Olas que van");
 filaStrings.agregar("¡Hola!");
 
 // Remover un elemento de cada una de las 3 filas.
+
 const removidoNumero = filaNumeros.remover();
 const removidoString = filaStrings.remover(); 
 const removidoAnimal = filaAnimales.remover(); 
 
 // Verificación en consola 
-console.log("--- Resultados Punto 10 ---");
+
+console.log("\n========================================");
+console.log("Resultados Punto 10");
+console.log("========================================\n");
 console.log("Elemento removido de filaNumeros:", removidoNumero);
 console.log("Elemento removido de filaStrings:", removidoString);
 console.log("Elemento removido de filaAnimales:", removidoAnimal?.nombre);
